@@ -24,13 +24,23 @@ class MyApp extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: EdgeInsets.all(15),
-              child: Image.asset('images/dice1.png'),
+              child: TextButton(
+                onPressed: () {
+                  print('This is left Button');
+                },
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
           ),
           Expanded(
             child: Padding(
               padding: EdgeInsets.all(15),
-              child: Image.asset('images/dice1.png'),
+              child: TextButton(
+                 onPressed: () {
+                  print('This is Right Button');
+                },
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
           ),
         ],
