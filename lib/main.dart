@@ -4,9 +4,9 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromARGB(255, 82, 244, 54),
         appBar: AppBar(
-          backgroundColor: Colors.red,
+          backgroundColor: Color.fromARGB(255, 177, 244, 54),
           title: Text('Dice'),
         ),
         body: MyApp(),
@@ -18,6 +18,13 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: <Widget>[
+        Image(
+          width: 180,
+          image: AssetImage('images/dice1.png'),
+        ),
+      ],
+    );
   }
 }
